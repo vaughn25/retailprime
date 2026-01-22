@@ -1,4 +1,4 @@
-namespace PrimeApi
+namespace Prime.Api
 {
     public class WeatherForecast
     {

@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailPrime", "RetailPrime\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Winforms", "Winforms", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeLibrary", "PrimeLibrary\PrimeLibrary.csproj", "{00546894-C650-4379-805C-84AB4885E2E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime.Library", "PrimeLibrary\Prime.Library.csproj", "{00546894-C650-4379-805C-84AB4885E2E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeApi", "PrimeApi\PrimeApi.csproj", "{CD0A968F-55BF-4D07-B175-1D347987366E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime.Api", "PrimeApi\Prime.Api.csproj", "{CD0A968F-55BF-4D07-B175-1D347987366E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime.Console", "Prime.Console\Prime.Console.csproj", "{79121CC4-10EE-4979-B729-D8CE80828236}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{CD0A968F-55BF-4D07-B175-1D347987366E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD0A968F-55BF-4D07-B175-1D347987366E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD0A968F-55BF-4D07-B175-1D347987366E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79121CC4-10EE-4979-B729-D8CE80828236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79121CC4-10EE-4979-B729-D8CE80828236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79121CC4-10EE-4979-B729-D8CE80828236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79121CC4-10EE-4979-B729-D8CE80828236}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{FBF38E5F-84B5-4BDE-BB0E-C7EE48120405} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{00546894-C650-4379-805C-84AB4885E2E9} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{CD0A968F-55BF-4D07-B175-1D347987366E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{79121CC4-10EE-4979-B729-D8CE80828236} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C4FAD943-CD6D-49B3-92F5-D3B2A9AEF797}
