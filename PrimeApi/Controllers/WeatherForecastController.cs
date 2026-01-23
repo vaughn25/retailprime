@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Prime.Api;
 
 namespace PrimeApi.Controllers
 {
