@@ -8,6 +8,11 @@
 
   <ItemGroup>
     <None Remove="Repositories\Database\Scripts\RetailPrime.Scripts.Script000001 - Create user table.sql" />
+    <None Remove="Repositories\Database\Scripts\RetailPrime.Scripts.Script000002 - Add password column.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Repositories\Database\Scripts\RetailPrime.Scripts.Script000002 - Add password column.sql" />
   </ItemGroup>
 
   <ItemGroup>

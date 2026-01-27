@@ -23,6 +23,13 @@ namespace Prime.Library.Repositories.Database
             };
         }
 
+        /// <summary>
+        /// With a provided providername and connection string, creates and returns an IDbConnection.
+        /// </summary>
+        /// <param name="providerName"></param>
+        /// <param name="connectionString"></param>
+        /// <returns></returns>
+        /// <exception cref="InvalidOperationException"></exception>
         public IDbConnection CreateConnection(string providerName, string connectionString)
         {
             var factory = GetFactory(providerName);
