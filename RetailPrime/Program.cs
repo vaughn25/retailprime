@@ -1,3 +1,5 @@
+using Prime.Library.Domain;
+
 namespace RetailPrime
 {
     internal static class Program
@@ -11,7 +13,11 @@ namespace RetailPrime
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            // Initialize the HttpClient for API communication
+            HttpGlobals.InitializeHttpClient();
+
+            Application.Run(new Login());
         }
     }
 }

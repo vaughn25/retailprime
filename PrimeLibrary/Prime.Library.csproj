@@ -26,4 +26,8 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Prime.Models\Prime.Models.csproj" />
+  </ItemGroup>
+
 </Project>
