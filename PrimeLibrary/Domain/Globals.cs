@@ -1,5 +1,7 @@
 ﻿
 
+using System.Text.Json;
+
 namespace Prime.Library.Domain
 {
     public static class HttpGlobals
@@ -7,6 +9,11 @@ namespace Prime.Library.Domain
         public const string BaseUrl = "https://localhost:7000/";
 
         public static HttpClient HttpClient = new HttpClient();
+
+        public static JsonSerializerOptions SerializerOptions = new JsonSerializerOptions() 
+        { 
+            PropertyNameCaseInsensitive = true,
+        };
 
         /// <summary>
         /// Initializes an HttpClient pointing to your desired endpoint. This must be called at least once at application start up. 

@@ -4,3 +4,12 @@ GET {{PrimeApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+GET {{PrimeApi_HostAddress}}/api/Users/GetByUsernamePassword
+Accept: application/json
+Accept-Language: en-US
+Content-Type: application/json
+
+{
+    "Username": "jdoe",
+    "Password": "changeme123"
+}

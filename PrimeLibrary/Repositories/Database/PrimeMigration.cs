@@ -13,8 +13,7 @@ namespace Prime.Library.Repositories.Database
         /// <exception cref="Exception">Thrown if the database migration fails.</exception>
         public void Initialize(string providerName, string connectionString)
         {
-            var dbFactory = new DbFactory();
-            using var connection = dbFactory.CreateConnection(providerName,connectionString);
+            using var connection = DbFactory.CreateConnection(providerName,connectionString);
             {
                 EnsureDatabase.For.SqlDatabase(connection.ConnectionString);
             }

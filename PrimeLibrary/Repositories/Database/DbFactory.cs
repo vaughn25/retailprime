@@ -4,7 +4,7 @@ using System.Data.Common;
 
 namespace Prime.Library.Repositories.Database
 {
-    public class DbFactory
+    public static class DbFactory 
     {
         /// <summary>
         /// Takes an incoming provider name and returns the corresponding DbProviderFactory.
@@ -14,7 +14,7 @@ namespace Prime.Library.Repositories.Database
         /// <param name="providerName"></param>
         /// <returns></returns>
         /// <exception cref="NotSupportedException"></exception>
-        public DbProviderFactory GetFactory(string providerName)
+        public static DbProviderFactory GetFactory(string providerName)
         {
             return providerName.ToLower() switch
             {
@@ -30,7 +30,7 @@ namespace Prime.Library.Repositories.Database
         /// <param name="connectionString"></param>
         /// <returns></returns>
         /// <exception cref="InvalidOperationException"></exception>
-        public IDbConnection CreateConnection(string providerName, string connectionString)
+        public static IDbConnection CreateConnection(string providerName, string connectionString)
         {
             var factory = GetFactory(providerName);
             var connection = factory.CreateConnection();
@@ -41,4 +41,5 @@ namespace Prime.Library.Repositories.Database
             return connection;
         }
     }
+
 }

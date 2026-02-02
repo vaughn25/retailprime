@@ -24,4 +24,11 @@ namespace Prime.Library.Domain.Exceptions
         public UserException(string message) : base(message) { }
         public UserException(string message, Exception inner) : base(message, inner) { }
     }
+
+    public class DatabaseException : Exception
+    {
+        public DatabaseException() { }
+        public DatabaseException(string message) : base(message) { }
+        public DatabaseException(string message, Exception inner) : base(message, inner) { }
+    }
 }

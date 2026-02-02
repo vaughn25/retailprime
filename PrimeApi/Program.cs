@@ -1,4 +1,6 @@
 
+using Prime.Library.Repositories;
+
 namespace PrimeApi
 {
     public class Program
@@ -12,6 +14,10 @@ namespace PrimeApi
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
+            builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+            builder.Services.AddTransient<IUserRepository,UserRepository>();
 
             var app = builder.Build();
 

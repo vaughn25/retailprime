@@ -1,6 +1,8 @@
 ﻿
 namespace Prime.Models
 {
+    public record UserDTO(string Username, string Password);
+
     /// <summary>
     /// This model defines a user in Retail Prime.
     /// </summary>
